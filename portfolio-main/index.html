@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S. Gracy — Portfolio</title>
+  <meta name="description" content="Portfolio of S. Gracy — Final year CSE student, Web & ML developer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* small custom tweaks */
+    .prose img{max-width:240px}
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-white/60 backdrop-blur sticky top-0 z-40 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400 flex items-center justify-center text-white font-bold">SG</div>
+        <div class="hidden sm:block">
+          <div class="text-lg font-semibold">S. Gracy</div>
+          <div class="text-xs text-slate-500">Software & Web Developer</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <div class="md:hidden">git --version
+        <button id="menuBtn" class="p-2 rounded-md hover:bg-slate-100">Menu</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden px-6 pb-4">
+      <a href="#about" class="block py-2">About</a>
+      <a href="#projects" class="block py-2">Projects</a>
+      <a href="#skills" class="block py-2">Skills</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12">
+<section id="hero" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center bg-gradient-to-b from-teal-50 to-purple-50 p-6 rounded-lg shadow-md">
+
+  <!-- Left column: Text -->
+  <div class="md:col-span-2 space-y-6">
+    <h1 class="text-3xl sm:text-4xl font-extrabold">
+      Hi — I’m <span class="text-purple-600">S. Gracy</span>
+    </h1>
+    <p class="text-lg text-slate-700">
+      Final-year Computer Science & Engineering student building responsive web apps and experimenting with machine learning. I enjoy UI/UX and making accessible, real-world software.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-wrap gap-3">
+      <a href="#projects" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-purple-600 text-white text-sm hover:bg-purple-700">
+        View Projects
+      </a>
+      <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-purple-200 text-purple-600 hover:bg-purple-50 text-sm">
+        Contact Me
+      </a>
+      <a href="RESUME @2.pdf" download class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-purple-200 text-purple-600 hover:bg-purple-50 text-sm">
+        Download PDF
+      </a>
+    </div>
+
+    <!-- Info cards -->
+    <dl class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+      <div class="bg-white p-3 rounded-lg shadow-sm">
+        <dt class="text-slate-500">Location</dt>
+        <dd class="font-medium">Keelaiyur, Nagapattinam</dd>
+      </div>
+      <div class="bg-white p-3 rounded-lg shadow-sm">
+        <dt class="text-slate-500">Email</dt>
+        <dd class="font-medium">gracysandanarajan@gmail.com</dd>
+      </div>
+      <div class="bg-white p-3 rounded-lg shadow-sm">
+        <dt class="text-slate-500">Phone</dt>
+        <dd class="font-medium">+91 98943 59257</dd>
+      </div>
+      <div class="bg-white p-3 rounded-lg shadow-sm">
+        <dt class="text-slate-500">Role</dt>
+        <dd class="font-medium">Software Developer</dd>
+      </div>
+    </dl>
+  </div>
+
+  <!-- Right column: Photo -->
+  <div class="flex items-center justify-center md:col-span-1">
+    <img src="profile.png" alt="S. Gracy"
+         class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full object-contain bg-white shadow-xl border-4 border-white">
+  </div>
+</section>
+
+
+    <!-- About & Education -->
+    <section id="about" class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-sm">
+        <h2 class="text-xl font-semibold">About</h2>
+        <p class="mt-3 text-slate-700">I am a final-year Computer Science and Engineering student with strong foundations in <strong>Python, Java, and C</strong>. I build user-friendly web apps using modern frontend tools and have explored machine-learning based projects like voice-biometric authentication. I focus on accessibility, responsive design, and effective UI/UX.</p>
+
+        <h3 class="mt-6 font-semibold">Internship</h3>
+        <p class="mt-2 text-sm text-slate-700">Full Stack Web Development Intern at <strong>8Queens Software Technologies</strong> (Jun 2025 - Jul 2025). Worked on HTML, CSS, Tailwind CSS, responsive layouts and accessibility.</p>
+
+        <h3 class="mt-4 font-semibold">Certifications</h3>
+        <ul class="mt-2 list-disc list-inside text-sm text-slate-700">
+          <li>Full Stack Web Development Internship — 8Queens (Jul 2025)</li>
+          <li>Master Class on UI & UX — Novitech R&D (Jun 2025)</li>
+          <li>Master Class on Full Stack Web Development — Novitech R&D (Aug 2025)</li>
+          <li>Paper Presentation — EGS Pillay Engineering College (Oct 2024)</li>
+          <li>Java & Python courses — SkillRack (Sep 2025)</li>
+        </ul>
+      </div>
+
+      <aside class="bg-white p-6 rounded-lg shadow-sm">
+        <h3 class="font-semibold">Education</h3>
+        <div class="mt-3 text-sm text-slate-700">
+          <div class="font-medium">B.E. Computer Science & Engineering</div>
+          <div>Sir Issac Newton College of Engineering & Technology</div>
+          <div class="text-xs mt-2">Aug 2022 - Jun 2026 | CGPA: 8.16</div>
+
+          <hr class="my-4" />
+          <div class="font-medium">H.S.C. — St. Xavier HSS</div>
+          <div class="text-xs">Jun 2020 - May 2022 | 77%</div>
+          <div class="font-medium mt-3">S.S.L.C. — St. Xavier HSS</div>
+          <div class="text-xs">Jun 2018 - May 2020 | 75%</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mt-12">
+      <h2 class="text-2xl font-semibold">Projects</h2>
+      <p class="mt-2 text-slate-600">A selection of projects I built during college and internships.</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="bg-white p-5 rounded-lg shadow-sm">
+          <div class="flex items-start justify-between">
+            <h3 class="font-semibold">College Notice Board</h3>
+            <div class="text-xs text-slate-500">Web</div>
+          </div>
+          <p class="mt-3 text-slate-700 text-sm">A web-based notice board system to digitize and streamline college announcements. Includes admin panel, user login, and responsive UI.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded-full border text-slate-600">HTML</span>
+            <span class="px-2 py-1 rounded-full border text-slate-600">CSS</span>
+            <span class="px-2 py-1 rounded-full border text-slate-600">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="bg-white p-5 rounded-lg shadow-sm">
+          <div class="flex items-start justify-between">
+            <h3 class="font-semibold">Voice-Based Authentication System</h3>
+            <div class="text-xs text-slate-500">ML / Python</div>
+          </div>
+          <p class="mt-3 text-slate-700 text-sm">A contactless voice-based biometric authentication system using MFCC audio features and ML models for secure identity verification.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded-full border text-slate-600">Python</span>
+            <span class="px-2 py-1 rounded-full border text-slate-600">Machine Learning</span>
+            <span class="px-2 py-1 rounded-full border text-slate-600">Audio Processing</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="mt-6 text-sm text-slate-600">Want these hosted as live demos? I can provide a GitHub repo and deploy links (Netlify/GitHub Pages) — tell me which projects you want published first.</div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="mt-12 bg-white p-6 rounded-lg shadow-sm">
+      <h2 class="text-xl font-semibold">Skills</h2>
+      <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
+        <div class="p-3 border rounded">Python</div>
+        <div class="p-3 border rounded">Java</div>
+        <div class="p-3 border rounded">C</div>
+        <div class="p-3 border rounded">SQL</div>
+        <div class="p-3 border rounded">HTML</div>
+        <div class="p-3 border rounded">CSS</div>
+        <div class="p-3 border rounded">JavaScript</div>
+        <div class="p-3 border rounded">Tailwind CSS</div>
+        <div class="p-3 border rounded">UI/UX</div>
+        <div class="p-3 border rounded">Machine Learning</div>
+        <div class="p-3 border rounded">Responsive Design</div>
+        <div class="p-3 border rounded">Web Accessibility</div>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="font-semibold">Achievements</h3>
+        <ul class="list-disc list-inside text-sm mt-2 text-slate-700">
+          <li>Solved 513+ coding problems on SkillRack (Python, Java, C, SQL).</li>
+          <li>Presented a paper at EGS Pillay Engineering College (Oct 2024).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+      <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-sm">
+        <h2 class="text-xl font-semibold">Contact</h2>
+        <p class="mt-3 text-slate-700">I’m open to internships, freelance projects, and collaboration. Reach out via email or LinkedIn — I typically respond within a day.</p>
+
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="mailto:gracysandanarajan@gmail.com" class="block p-4 rounded border hover:bg-slate-50">✉️ gracysandanarajan@gmail.com</a>
+          <a href="tel:+919894359257" class="block p-4 rounded border hover:bg-slate-50">📞 +91 98943 59257</a>
+        </div>
+
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="text-sm underline">LinkedIn</a>
+          <a href="#" class="text-sm underline">GitHub</a>
+        </div>
+      </div>
+
+      <aside class="bg-white p-6 rounded-lg shadow-sm">
+        <h3 class="font-semibold">Quick Links</h3>
+        <ul class="mt-3 text-sm text-slate-700 list-disc list-inside">
+          <li><a href="#projects" class="underline">Projects</a></li>
+          <li><a href="sandbox:/mnt/data/Gracy_Portfolio.pdf" download class="underline">Download PDF Portfolio</a></li>
+          <li><a href="#skills" class="underline">Skills</a></li>
+        </ul>
+      </aside>
+    </section>
+
+  </main>
+
+  <footer class="mt-12 py-6 bg-white border-t">
+    <div class="max-w-5xl mx-auto px-6 text-sm text-slate-600">© <span id="year"></span> S. Gracy — Built with ♥ • <a href="#" class="underline">Resume</a></div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
+
